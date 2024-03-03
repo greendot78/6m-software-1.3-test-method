@@ -55,7 +55,6 @@ Source: https://www.javatpoint.com/software-engineering-software-development-lif
     1. Secrets & Data Storage Strategy - Determine how secure are secrets and sensitive data being stored.
 ---
 
----
 ### Kok Leong's notes:
 
 Under the Software Development Life Cycle (SDLC), various types of testing are performed to ensure the quality and functionality of the software. These tests fall under two broad categories: Functional Testing and Non-Functional Testing.
@@ -64,22 +63,52 @@ Under the Software Development Life Cycle (SDLC), various types of testing are p
 
 Functional testing is a type of testing which verifies that each function of the software application operates in conformance with the requirement specification. This testing mainly involves black box testing and it is not concerned about the source code of the application.
 
-1. **Unit Testing:** This is the first level of testing and is often performed by developers themselves. It involves testing individual components in isolation.
-2. **Integration Testing:** This involves testing the interaction between different software modules.
-3. **System Testing:** This involves testing the system as a whole.
-4. **Regression Testing:** This involves testing the system to ensure that previously developed and tested software still performs after a change.
-5. **Acceptance Testing:** This involves testing the system with the intent of confirming readiness of the product and customer acceptance.
+1. **Unit Testing:** first level of testing and is often performed by developers themselves. It involves testing individual components in isolation.
+    Unit testing is performed by developers themselves and is the first level of testing. It involves testing individual components of the software in isolation to ensure that they work as expected. This is typically done using a unit testing framework. For example, in JavaScript, you might use a framework like Jest to write unit tests.
+
+2. **Integration Testing:** testing the interaction between different software modules.
+Involves testing the interaction between different software modules to ensure they work correctly together. This can be done in various ways, such as top-down, bottom-up, or sandwich (a combination of top-down and bottom-up), depending on the relationship between modules.
+For example, if you have a function that relies on a database, you might write an integration test that checks whether the function correctly queries the database and returns the expected results.
+
+3. **System Testing:** testing the system as a whole.
+Involves testing the system as a whole. This is typically done by a separate testing team (not the developers). The purpose of system testing is to evaluate the system's compliance with the specified requirements.
+System testing could involve a variety of tests, such as confirming that the system works correctly on different operating systems or that it handles large amounts of data correctly.
+
+
+4. **Regression Testing:** testing the system to ensure that previously developed and tested software still performs after a change.
+Involves testing the system to ensure that previously developed and tested software still performs after a change. If a new feature has been added, testers would ensure that the existing features still work as expected.
+This is typically done by running a suite of tests, which should cover all features of the application. Any failures would indicate a regression.
+
+
+5. **Acceptance Testing:** testing the system with the intent of confirming readiness of the product and customer acceptance.
+Involves testing the system with the intent of confirming readiness of the product and customer acceptance. It's the final phase of testing, where the real users have the chance to go hands-on with the software to ensure that it meets their needs.
+This could involve beta testing, where the software is rolled out to a small group of users for validation, or user acceptance testing (UAT), where a representative group of end users try the software to make sure it does what it needs to do in real-world scenarios.
+
+
 
 #### Non-Functional Testing
 
 Non-functional testing is a type of testing to check non-functional aspects (performance, usability, reliability, etc) of a software application. It is designed to test the readiness of a system as per nonfunctional parameters which are never addressed by functional testing.
 
 1. **Performance Testing:** This involves testing the performance and responsiveness of an application under different loads.
-2. **Usability Testing:** This involves testing the user interface and overall user friendliness of the system.
-3. **Security Testing:** This involves testing the system for vulnerabilities and risks in the system.
-4. **Compatibility Testing:** This involves testing how well the system performs in different environments, web browsers, hardware, operating systems, etc.
-5. **Reliability Testing:** This involves testing the ability of the system to function without failure for a specified period of time in a particular environment.
+Is done to evaluate the system's performance under a particular load. It can involve stress testing (where the system is pushed beyond its intended capacity to identify break points or performance bottlenecks), load testing (where the system is subjected to expected load), and spike testing (where the system is subjected to extreme increases and decreases in load).
+Tools like Apache JMeter, LoadRunner, or Gatling can be used to simulate a large number of users and measure how the system performs.
 
+2. **Usability Testing:** This involves testing the user interface and overall user friendliness of the system.
+Involves evaluating the software by testing it on users to make sure it's intuitive and easy to use. This can involve tasks like checking how easy it is for users to complete desired actions, how pleasing the interface is, and how easy it is for new users to understand the system.
+This is typically done by observing users as they interact with the system, and then collecting feedback on their experience.
+
+3. **Security Testing:** This involves testing the system for vulnerabilities and risks in the system.
+Is done to check how well the system protects against unauthorized access, hacks, and other potential security breaches. This can involve penetration testing (where testers try to 'hack' the system to find vulnerabilities), checking encryption methods, and testing for SQL injection or cross-site scripting attacks.
+Tools like OWASP ZAP or Nessus can be used to help with security testing.
+
+4. **Compatibility Testing:** This involves testing how well the system performs in different environments, web browsers, hardware, operating systems, etc.
+Is done to ensure that the software can run in different environments, including different hardware, operating systems, browsers, etc. This involves testing the software under various conditions and ensuring it works as expected.
+This can be done manually, by setting up tests on different systems, or it can be automated using tools like BrowserStack or Sauce Labs.
+
+5. **Reliability Testing:** This involves testing the ability of the system to function without failure for a specified period of time in a particular environment.
+Is done to check if the software can perform a failure-free operation for a specified period of time in a particular environment. The goal is to discover potential bugs and issues that could affect the software's functionality over time.
+This can involve running the system under normal conditions for a long period of time, or using tools to simulate a long period of time, to see if any issues arise.
 
 ---
 

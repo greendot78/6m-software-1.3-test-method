@@ -64,20 +64,23 @@ Under the Software Development Life Cycle (SDLC), various types of testing are p
 
 Functional testing is a type of testing which verifies that each function of the software application operates in conformance with the requirement specification. This testing mainly involves black box testing and it is not concerned about the source code of the application.
 
-**Unit Testing:** This is the first level of testing and is often performed by developers themselves. It involves testing individual components in isolation.
-**Integration Testing:** This involves testing the interaction between different software modules.
-**System Testing:** This involves testing the system as a whole.
-**Regression Testing:** This involves testing the system to ensure that previously developed and tested software still performs after a change.
-**Acceptance Testing:** This involves testing the system with the intent of confirming readiness of the product and customer acceptance.
+1. **Unit Testing:** This is the first level of testing and is often performed by developers themselves. It involves testing individual components in isolation.
+2. **Integration Testing:** This involves testing the interaction between different software modules.
+3. **System Testing:** This involves testing the system as a whole.
+4. **Regression Testing:** This involves testing the system to ensure that previously developed and tested software still performs after a change.
+5. **Acceptance Testing:** This involves testing the system with the intent of confirming readiness of the product and customer acceptance.
 
 #### Non-Functional Testing
 
 Non-functional testing is a type of testing to check non-functional aspects (performance, usability, reliability, etc) of a software application. It is designed to test the readiness of a system as per nonfunctional parameters which are never addressed by functional testing.
-**Performance Testing:** This involves testing the performance and responsiveness of an application under different loads.
-**Usability Testing:** This involves testing the user interface and overall user friendliness of the system.
-**Security Testing:** This involves testing the system for vulnerabilities and risks in the system.
-**Compatibility Testing:** This involves testing how well the system performs in different environments, web browsers, hardware, operating systems, etc.
-**Reliability Testing:** This involves testing the ability of the system to function without failure for a specified period of time in a particular environment.
+
+1. **Performance Testing:** This involves testing the performance and responsiveness of an application under different loads.
+2. **Usability Testing:** This involves testing the user interface and overall user friendliness of the system.
+3. **Security Testing:** This involves testing the system for vulnerabilities and risks in the system.
+4. **Compatibility Testing:** This involves testing how well the system performs in different environments, web browsers, hardware, operating systems, etc.
+5. **Reliability Testing:** This involves testing the ability of the system to function without failure for a specified period of time in a particular environment.
+
+
 ---
 
 ## Part 3 - Group Discussion

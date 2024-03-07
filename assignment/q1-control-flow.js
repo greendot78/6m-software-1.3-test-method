@@ -10,6 +10,31 @@
 const env = "DEV"; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
 let databaseCredential = "devuser:password";
 
-// Task: Add code here
+function switcher(env) {
+    // Task: Add code here
+    switch (env) {
+        case "STAGE":
+            databaseCredential = "stageuser:password";
+            break;
+        
+        case "PROD":
+            databaseCredential = "produser:password";
+            break;
 
-console.log(`Database credential for environment ${env} is ${databaseCredential}`);
+        case "DEV":
+            databaseCredential = "devuser:password";
+            break;
+    };
+
+    console.log(`Database credential for environment ${env} is ${databaseCredential}`);
+    return databaseCredential;
+}
+
+switcher("DEV");
+switcher("STAGE");
+switcher("PROD");
+
+
+module.exports = {
+    switcher
+}

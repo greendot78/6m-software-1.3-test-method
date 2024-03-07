@@ -3,6 +3,7 @@
 // const {} is what we call object destructuring and it allows us to unpack properties from objects into variables.
 const {studentList, printStudentNames} = require("./q2-arrays-loop");
 const {convert} = require("./q3-objects");
+const {switcher} = require("./q1-control-flow");
 
 //The describe () creates a block that groups together several related tests
 describe("Demo", ()=>{
@@ -17,13 +18,20 @@ describe("Demo", ()=>{
     })
 
     it("should test the convert function of q3", ()=>{
-        const keyArr = ["NLB1", "NLB2"];
-        const valueArr = ["Book A", "Book B"];
-
-        const result = convert(keyArr, valueArr);
+        const keyArr    = ["NLB1", "NLB2"];
+        const valueArr  = ["Book A", "Book B"];
+        const result    = convert(keyArr, valueArr);
         //the toBe() can be used to match specific values
         expect(result["NLB1"]).toBe("Book A");
         expect(result["NLB2"]).toBe("Book B");
+    })
+
+    it("should test the switcher function of q1", ()=>{
+        const result    = switcher("DEV");
+        //the toBe() can be used to match specific values
+        expect(switcher("DEV")).toBe("devuser:password");
+        expect(switcher("STAGE")).toBe("stageuser:password");
+        expect(switcher("PROD")).toBe("produser:password");
     })
 })
 //So when the command `npm run test` is run, it calls the test suite and runs the individual tests.

@@ -16,7 +16,16 @@ const bookTitle = ["Lord of the Rings", "Programming for Dummies", "Introduction
 let booksObj = {}; 
 
 function convert(keyArr, valueArr){
-    
+    // check if the keyArr and valueArr are of the same length
+    if(keyArr.length !== valueArr.length) {
+        return "The keyArr and valueArr are not of the same length";
+    }
+
+    for (let i = 0; i < keyArr.length; i++) {
+        booksObj[keyArr[i]] = valueArr[i];
+    }
+
+    return booksObj;
     // Add code here
     /*
         Tips:
